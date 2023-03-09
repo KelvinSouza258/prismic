@@ -1,0 +1,34 @@
+{
+  "_cts": {
+    "home": {},
+    "projectPage": {}
+  },
+  "slices": {
+    "Card": {}
+  },
+  "src/slices": {
+    "Hero": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "ProjectCard": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "ProjectCards": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "ProjectContent": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    }
+  }
+}

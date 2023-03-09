@@ -1,0 +1,102 @@
+{
+  "metaTitle": {
+    "__TYPE__": "FieldContent",
+    "value": "cap",
+    "type": "Text"
+  },
+  "projectName": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Officia commodo do amet proident velit. Nulla tempor ad cupidatat duis. Ex in eu id aliqua labore pariatur labore sunt qui."
+        }
+      }
+    ]
+  },
+  "projectBanner": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+      "width": 3199,
+      "height": 3199
+    },
+    "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+    "width": 3199,
+    "height": 3199,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  },
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "lady"
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "project_content$4094bf6a-b187-47ac-8f90-922e3973448e",
+        "name": "project_content",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "paragraph",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Ex nulla laborum veniam incididunt esse consequat. Est irure elit commodo ad proident."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "image",
+                  {
+                    "__TYPE__": "ImageContent",
+                    "origin": {
+                      "id": "main",
+                      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+                      "width": 5616,
+                      "height": 3744
+                    },
+                    "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?rect=0%2C0%2C5616%2C3744&w=750&h=500",
+                    "width": 750,
+                    "height": 500,
+                    "edit": {
+                      "zoom": 1,
+                      "crop": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "background": "transparent"
+                    },
+                    "thumbnails": {}
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

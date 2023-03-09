@@ -1,0 +1,90 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Aboard"
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "projectTitle",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading4",
+                  "content": {
+                    "text": "Several"
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "projectImage",
+            {
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
+                "width": 3277,
+                "height": 4092
+              },
+              "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?rect=0%2C408%2C3277%2C3277&w=400&h=400",
+              "width": 400,
+              "height": 400,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 408
+                },
+                "background": "transparent"
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ],
+          [
+            "projectDescription",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Amet dolor magna aliquip proident consequat voluptate esse aliquip occaecat aute est. Pariatur incididunt nostrud occaecat incididunt elit irure ad qui Lorem tempor quis mollit nulla. Laboris dolore officia mollit elit."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "projectLink",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

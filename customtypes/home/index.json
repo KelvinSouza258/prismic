@@ -1,0 +1,38 @@
+{
+  "id": "home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "metaTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hero": {
+              "type": "SharedSlice"
+            },
+            "project_card": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "project_card",
+  "type": "SharedSlice",
+  "name": "ProjectCards",
+  "description": "ProjectCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProjectCard",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Titulo da seção",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        }
+      },
+      "items": {
+        "projectTitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título do Projeto",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading4"
+          }
+        },
+        "projectImage": {
+          "type": "Image",
+          "config": {
+            "label": "Imagem do projeto",
+            "constraint": {
+              "width": 400,
+              "height": 400
+            },
+            "thumbnails": []
+          }
+        },
+        "projectDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descrição do projeto",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "projectLink": {
+          "type": "Link",
+          "config": {
+            "label": "Link para o projeto",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

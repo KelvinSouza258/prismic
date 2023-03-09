@@ -1,0 +1,48 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Hero",
+      "primary": {
+        "heroImage": {
+          "type": "Image",
+          "config": {
+            "label": "Logo",
+            "constraint": {
+              "width": 64,
+              "height": 64
+            },
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2,heading3,heading4"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descrição",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}
