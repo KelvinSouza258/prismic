@@ -1,7 +1,7 @@
 import type { Content } from '@prismicio/client'
+import { PrismicNextImage } from '@prismicio/next'
 import type { SliceComponentProps } from '@prismicio/react'
 import { PrismicLink, PrismicRichText } from '@prismicio/react'
-import Image from 'next/image'
 
 export default function ProjectCards({
   slice
@@ -19,12 +19,7 @@ export default function ProjectCards({
             className="flex flex-col justify-between gap-6">
             <PrismicRichText field={item.projectTitle} />
             <div className="relative">
-              <Image
-                alt={item.projectImage.alt ?? ''}
-                height={item.projectImage.dimensions?.height ?? 400}
-                src={item.projectImage.url ?? ''}
-                width={item.projectImage.dimensions?.width ?? 400}
-              />
+              <PrismicNextImage field={item.projectImage} />
               <div className="relative">
                 <div className="absolute bottom-full w-full bg-gradient-to-t from-neutral-800 px-4 pb-4 pt-8 text-white">
                   <PrismicRichText field={item.projectDescription} />

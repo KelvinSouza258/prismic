@@ -1,5 +1,6 @@
+import type { Content } from '@prismicio/client'
 import { SliceZone } from '@prismicio/react'
-import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
+import type { GetServerSideProps, InferGetServerSidePropsType } from 'next'
 import Head from 'next/head'
 
 import { createClient } from '@/prismic/config'
@@ -7,7 +8,7 @@ import { components } from '@/slices'
 
 export default function Home({
   homeData
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
       <Head>
@@ -24,10 +25,10 @@ export default function Home({
   )
 }
 
-export const getStaticProps = async ({
-  previewData
-}: GetStaticPropsContext) => {
-  const client = createClient({ previewData })
+export const getServerSideProps: GetServerSideProps<{
+  homeData: Content.HomeDocument
+}> = async () => {
+  const client = createClient()
 
   const homeData = await client.getSingle('home')
 

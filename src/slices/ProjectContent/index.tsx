@@ -1,7 +1,7 @@
 import type { Content } from '@prismicio/client'
+import { PrismicNextImage } from '@prismicio/next'
 import type { SliceComponentProps } from '@prismicio/react'
 import { PrismicRichText } from '@prismicio/react'
-import Image from 'next/image'
 
 export default function ProjectContent({
   slice
@@ -12,14 +12,7 @@ export default function ProjectContent({
         <div
           key={String(item.paragraph)}
           className="flex flex-col items-center gap-6">
-          {item.image.url ? (
-            <Image
-              alt={item.image.alt ?? ''}
-              height={item.image.dimensions?.height ?? 400}
-              src={item.image.url}
-              width={item.image.dimensions?.width ?? 400}
-            />
-          ) : null}
+          <PrismicNextImage field={item.image} />
           <PrismicRichText field={item.paragraph} />
         </div>
       ))}
