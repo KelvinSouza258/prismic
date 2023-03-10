@@ -93,6 +93,17 @@ interface ProjectPageDocumentData {
      */
     projectBanner: prismicT.ImageField<never>;
     /**
+     * Descrição do projeto field in *Página de projeto*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: projectPage.projectDescription
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    projectDescription: prismicT.RichTextField;
+    /**
      * Slice Zone field in *Página de projeto*
      *
      * - **Field Type**: Slice Zone
@@ -201,45 +212,15 @@ interface ProjectCardSliceDefaultPrimary {
  */
 export interface ProjectCardSliceDefaultItem {
     /**
-     * Título do Projeto field in *ProjectCards → Items*
+     * Project field in *ProjectCards → Items*
      *
-     * - **Field Type**: Title
+     * - **Field Type**: Content Relationship
      * - **Placeholder**: *None*
-     * - **API ID Path**: project_card.items[].projectTitle
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    projectTitle: prismicT.TitleField;
-    /**
-     * Imagem do projeto field in *ProjectCards → Items*
-     *
-     * - **Field Type**: Image
-     * - **Placeholder**: *None*
-     * - **API ID Path**: project_card.items[].projectImage
-     * - **Documentation**: https://prismic.io/docs/core-concepts/image
-     *
-     */
-    projectImage: prismicT.ImageField<never>;
-    /**
-     * Descrição do projeto field in *ProjectCards → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: project_card.items[].projectDescription
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    projectDescription: prismicT.RichTextField;
-    /**
-     * Link para o projeto field in *ProjectCards → Items*
-     *
-     * - **Field Type**: Link
-     * - **Placeholder**: *None*
-     * - **API ID Path**: project_card.items[].projectLink
+     * - **API ID Path**: project_card.items[].project
      * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
      *
      */
-    projectLink: prismicT.LinkField;
+    project: prismicT.RelationField<"projectPage">;
 }
 /**
  * Default variation for ProjectCards Slice

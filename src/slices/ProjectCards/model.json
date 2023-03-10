@@ -22,41 +22,14 @@
         }
       },
       "items": {
-        "projectTitle": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Título do Projeto",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading4"
-          }
-        },
-        "projectImage": {
-          "type": "Image",
-          "config": {
-            "label": "Imagem do projeto",
-            "constraint": {
-              "width": 400,
-              "height": 400
-            },
-            "thumbnails": []
-          }
-        },
-        "projectDescription": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Descrição do projeto",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
-          }
-        },
-        "projectLink": {
+        "project": {
           "type": "Link",
           "config": {
-            "label": "Link para o projeto",
-            "placeholder": "",
-            "select": null
+            "label": "Project",
+            "select": "document",
+            "customtypes": [
+              "projectPage"
+            ]
           }
         }
       },

@@ -30,7 +30,13 @@ export const getServerSideProps: GetServerSideProps<{
 }> = async () => {
   const client = createClient()
 
-  const homeData = await client.getSingle('home')
+  const homeData = await client.getSingle('home', {
+    fetchLinks: [
+      'projectPage.projectName',
+      'projectPage.projectBanner',
+      'projectPage.projectDescription'
+    ]
+  })
 
   return {
     props: {
