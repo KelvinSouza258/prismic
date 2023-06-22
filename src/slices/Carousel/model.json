@@ -1,0 +1,36 @@
+{
+  "id": "carousel",
+  "type": "SharedSlice",
+  "name": "Carousel",
+  "description": "Carousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "imageTitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título da imagem",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Imagem",
+            "constraint": { "width": 400, "height": 400 },
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}
